@@ -33,6 +33,7 @@ def predict2():
     return render_template("result.html",
                            tables=[predicted_output.to_html(classes='data', index=False)],
                            titles=predicted_output.columns.values)
+    
 @app.route('/api',methods=['POST'])
 def predict():
     # Get the data from the POST request.
@@ -49,5 +50,5 @@ def predict():
     print(">>> OUTPUT >>> ", output)
     return jsonify(output)
 
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=80, debug=True)
