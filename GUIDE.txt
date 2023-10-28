@@ -1,8 +1,0 @@
-1) Open PyCharm (guna Anaconda)
-2) Open Project --> Projek002
-3) Open Terminal and run cmd below :
-     
-    (venv) PS C:\Users\s52528\FLASK_TEST\projek002> flask --app app_projek002 run
-
-4) Pastu bukak Terminal dan run cmd below : 
-    (venv) PS C:\Users\s52528\FLASK_TEST\projek002> python .\request.py
