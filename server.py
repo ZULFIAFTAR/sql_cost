@@ -11,8 +11,8 @@ app = Flask(__name__)
 loaded_model = pickle.load(open('clf_model.pkl','rb'))
 loaded_vectorizer = pickle.load(open('vectorizer.pickle','rb'))
 
-data_predict = {'SQL_STATEMENT_TO_PREDICT': ["kalau ada sumur di ladang"]}
-new_data = pd.DataFrame(data_predict, columns = ['SQL_STATEMENT_TO_PREDICT'])
+#data_predict = {'SQL_STATEMENT_TO_PREDICT': ["kalau ada sumur di ladang"]}
+#new_data = pd.DataFrame(data_predict, columns = ['SQL_STATEMENT_TO_PREDICT'])
 
 @app.route('/home')
 def home():
